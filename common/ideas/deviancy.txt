@@ -429,7 +429,7 @@ ideas = {
 		
 		DDD_hotd_inc = { #Horror Of The Deep inc
 			
-			picture = generic_naval_manufacturer_1
+			picture = generic_naval_manufacturer_2
 
 			
 			allowed = {
