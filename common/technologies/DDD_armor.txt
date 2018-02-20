@@ -1,0 +1,20 @@
+technologies = {
+
+	DDD_gwtank = { 
+
+		enable_equipments = {
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = deviancy_armor_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+}
