@@ -1,0 +1,180 @@
+﻿capital = 341
+
+oob = "DDD_1936"
+set_research_slots = 4
+
+add_ideas = {
+	transcended_populace
+	deviant_missionaries
+	land_of_the_deviant
+}
+
+create_faction = DDD_FACTION
+add_to_faction = DDD
+
+set_technology = {
+	support_weapons = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	gwtank = 1
+	basic_light_tank = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battlecruiser = 1
+	early_battleship = 1
+	early_carrier = 1
+	early_submarine = 1
+	basic_submarine = 1
+	transport = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	electronic_mechanical_engineering = 1
+	basic_machine_tools = 1
+}
+
+1939.1.1 = {
+#### TODO: Give them a 1939 start later! ###
+}
+
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = GRE
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = GRE
+	}
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 25
+		}
+
+		fascism = {
+			popularity = 50
+		}
+		
+		communism = {
+			popularity = 25
+		}
+		
+		neutrality = { 
+			popularity = 0
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1934.2.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 200
+set_national_unity = 0.80
+
+
+
+# TODO: Replace this with propper leaders
+create_country_leader = {
+	name = "Lana McUmbrella I"
+	desc = "POLITICS_LANA_MCUMBRELLA_DESC"
+	picture = "Portrait_Lana_McUmbrella.dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+# TODO: Replace this with propper leaders
+create_country_leader = {
+	name = "Lana McUmbrella II"
+	desc = "POLITICS_LANA_MCUMBRELLA_DESC"
+	picture = "Portrait_Lana_McUmbrella.dds"
+	expire = "1999.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+# TODO: Replace this with propper leaders
+create_country_leader = {
+	name = "Lana McUmbrella III"
+	desc = "POLITICS_LANA_MCUMBRELLA_DESC"
+	picture = "Portrait_Lana_McUmbrella.dds"
+	expire = "1999.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+# TODO: Replace this with propper leaders
+create_country_leader = {
+	name = "Lana McUmbrella IV"
+	desc = "POLITICS_LANA_MCUMBRELLA_DESC"
+	picture = "Portrait_Lana_McUmbrella.dds"
+	expire = "1999.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Jugan"
+	picture = "Portrait_Deviancy_Jugan.dds"
+	traits = { offensive_doctrine }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Fei Gaug"
+	picture = "Portrait_Deviancy_Fei_Gaug.dds"
+	traits = { panzer_leader trickster }
+	skill = 5
+}
+
+create_corps_commander = {
+	name = "Esrea"
+	picture = "Portrait_Deviancy_Esrea.dds"
+	traits = { trickster }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Elizabeth Nash"
+	picture = "Portrait_Deviancy_Elizabeth_Nash.dds"
+	traits = { bearer_of_artillery }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Amaterasu Izanami"
+		picture = "Portrait_Deviancy_Amaterasu_Izanami.dds"
+	traits = { seawolf }
+	skill = 3
+}
+
+### Ship Variants ###
+
+# TODO: replace this with something proppe (if anything at all)

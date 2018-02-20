@@ -1,0 +1,94 @@
+leader_traits = {
+	
+	DDD_silent_plaything = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.15
+
+	}	
+	
+	DDD_assimilating_hive = {
+		random = no
+		sprite = 13
+		enemy_partisan_effect = -0.50
+		non_core_manpower = 0.04
+	}	
+	
+	DDD_dominant_personality = {
+		random = no
+		consumer_goods_factor = -0.05
+	}		
+	
+	DDD_communist_revolutionary = {
+		random = no
+		# Boosts Communism
+		sprite = 13
+		communism_drift = 0.1
+	}
+	
+	DDD_democratic_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		democratic_drift = 0.1
+	}
+	
+	DDD_fascist_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		fascism_drift = 0.1
+	}
+	
+	DDD_captain_of_industry = {
+		random = no
+		sprite = 10
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+	}	
+	
+	DDD_war_industrialist = {
+		random = no
+		sprite = 10
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+	}	
+	
+	DDD_grand_fleet_proponent = {
+		random = no
+		sprite = 14
+		experience_gain_navy = 0.05
+	}	
+	
+	DDD_army_ponygirl = { 
+		random = no
+		cavalry_attack_factor = 0.25
+		cavalry_defence_factor = 0.25
+	}
+	
+	DDD_army_chief_defensive_2 = { 
+		random = no
+		sprite = 9
+		army_defence_factor = 0.1
+
+	}
+	
+	DDD_army_chief_offensive_2 = {
+		random = no
+		sprite = 7
+		army_attack_factor = 0.1
+	}
+	
+	DDD_mechanical_cat = {
+		random = no
+		sprite = 14
+		experience_gain_army = 0.05
+	}
+	
+	DDD_ultimate_magical_girl_power = {
+		random = no
+		sprite = 14
+	}	
+	
+}

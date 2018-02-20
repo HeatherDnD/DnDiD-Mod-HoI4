@@ -1,0 +1,424 @@
+﻿###########################
+# Deviancy Events
+###########################
+
+add_namespace = deviancy
+
+# The National focus: Yugoslavian Question
+country_event = {
+	id = deviancy.1	
+	title = deviancy.1.t
+	desc = deviancy.1.d
+	picture = GFX_report_event_DDD_yugoslavian_question
+	
+	is_triggered_only = yes	
+	
+	option = { # Send the plan to the Italian
+		name = deviancy.1.a
+		
+		ITA = {
+			country_event = { days = 5 id = deviancy.2 }
+		}		
+	}
+	
+	option = { # Abort
+		name = deviancy.1.b
+	}	
+}
+
+# The National focus: Yugoslavian Question - The Italian's event
+country_event = {
+	id = deviancy.2
+	title = deviancy.2.t
+	desc = deviancy.2.d
+	picture = GFX_report_event_DDD_yugoslavian_question_ita
+
+	is_triggered_only = yes
+	
+	option = { # Agree to the plan
+		name = deviancy.2.a
+		
+		if = {
+			limit = {
+				is_in_faction = no
+			}
+			DDD = {	add_to_faction = ITA }
+		}
+		
+		DDD = {
+			hidden_effect = {
+				country_event = { days = 1 id = deviancy.3 }
+			}
+			effect_tooltip = {
+				DDD = {
+					create_wargoal = {
+						target = YUG
+						type = annex_everything
+					}
+					add_to_faction = ITA
+				}
+			}
+		}
+	}
+	
+	option = { # No intrest
+		name = deviancy.2.b
+		
+		DDD = {
+			hidden_effect = {
+				country_event = { days = 1 id = deviancy.4 }
+			}
+			effect_tooltip = {
+				DDD = {
+					create_wargoal = {
+						target = YUG
+						type = annex_everything
+					}
+				}
+			}
+		}		
+	}
+	
+	option = { # Yugoslavia is our rightfull land!
+		name = deviancy.2.c
+
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = DDD } 
+			}
+			
+			DDD = {
+				hidden_effect = {
+					country_event = { days = 1 id = deviancy.5 }
+				}
+			}	
+			create_wargoal = {
+				target = DDD
+				type = annex_everything
+			}
+		}		
+	}
+}
+
+country_event = { #Italy Accepts
+	id = deviancy.3	
+	title = deviancy.3.t
+	desc = deviancy.3.d
+	picture = GFX_report_event_DDD_yugoslavian_question_reply_1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deviancy.3.a
+		
+		create_wargoal = {
+			target = YUG
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { #Italy holds no intrest
+	id = deviancy.4
+	title = deviancy.4.t
+	desc = deviancy.4.d
+	picture = GFX_report_event_DDD_yugoslavian_question_reply_2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deviancy.4.a
+		
+		create_wargoal = {
+			target = YUG
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { #Italy rejects demands
+	id = deviancy.5
+	title = deviancy.5.t
+	desc = deviancy.5.d
+	picture = GFX_report_event_DDD_yugoslavian_question_reply_3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deviancy.5.a
+	}
+}
+
+# The National focus: Sinai Proposal
+country_event = {
+	id = deviancy.6	
+	title = deviancy.6.t
+	desc = deviancy.6.d
+	picture = GFX_report_event_DDD_sinai_proposal
+	
+	is_triggered_only = yes	
+	
+	option = { # Send the plan to the English
+		name = deviancy.6.a
+		
+		ENG = {
+			country_event = { days = 5 id = deviancy.7 }
+		}		
+	}
+	
+	option = { # Abort
+		name = deviancy.6.b
+	}	
+}
+
+# ENG's event for Sinai Proposal
+country_event = {
+	id = deviancy.7
+	title = deviancy.7.t
+	desc = deviancy.7.d
+	picture = GFX_report_event_DDD_sinai_proposal_eng
+	
+	is_triggered_only = yes	
+	
+	option = { # Accept the Proposal
+		name = deviancy.7.a
+			
+		453 = { 
+			if = {
+				limit = { is_owned_by = ENG }
+				hidden_effect = {
+					remove_core_of = ENG
+					add_core_of = DDD
+				}
+				DDD = { transfer_state = 453 }
+			}
+		}
+		454 = { 
+			if = {		
+				limit = { is_owned_by = ENG }
+				hidden_effect = {
+					remove_core_of = ENG
+					add_core_of = DDD
+				}
+				DDD = { transfer_state = 454 }
+				}
+		}				
+		455 = { 
+			if = {		
+				limit = { is_owned_by = ENG }
+				hidden_effect = {
+					remove_core_of = ENG
+					add_core_of = DDD
+				}
+				DDD = { transfer_state = 455 }
+				}
+		}				
+		
+		183 = { 
+			if = {
+				limit = { is_owned_by = DDD }
+				hidden_effect = {
+					remove_core_of = DDD
+					add_core_of = ENG
+				}
+				ENG = { transfer_state = 183 }
+				}
+		}
+
+		DDD = {
+			hidden_effect = {
+				country_event = { days = 1 id = deviancy.8 }
+			}
+		}				
+				
+	}
+	
+	option = { # Reject the Proposal
+		name = deviancy.7.b
+		
+		DDD = {
+			hidden_effect = {
+				country_event = { days = 1 id = deviancy.9 }
+			}
+			
+			effect_tooltip = {
+			DDD = {
+				create_wargoal = {
+					target = ENG
+					type = annex_everything
+				}
+			}
+			}
+		}	
+	}	
+}
+
+country_event = { #England Accepts
+	id = deviancy.8
+	title = deviancy.8.t
+	desc = deviancy.8.d
+	picture = GFX_report_event_DDD_sinai_proposal_reply_1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deviancy.8.a
+	}
+}
+
+country_event = { #England Rejects
+	id = deviancy.9
+	title = deviancy.9.t
+	desc = deviancy.9.d
+	picture = GFX_report_event_DDD_sinai_proposal_reply_2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deviancy.9.a
+		
+		create_wargoal = {
+			target = ENG
+			type = annex_everything
+		}
+	}
+}
+
+# The National focus: Further Demands
+country_event = {
+	id = deviancy.10	
+	title = deviancy.10.t
+	desc = deviancy.10.d
+	picture = GFX_report_event_DDD_further_demands
+	
+	is_triggered_only = yes	
+	
+	option = { # Send the plan to the English
+		name = deviancy.10.a
+		
+		ENG = {
+			country_event = { days = 5 id = deviancy.11 }
+		}		
+	}
+	
+	option = { # Abort
+		name = deviancy.10.b
+	}	
+}
+
+# ENG's event for Further Demands
+country_event = {
+	id = deviancy.11
+	title = deviancy.11.t
+	desc = deviancy.11.d
+	picture = GFX_report_event_DDD_further_demands_eng
+	
+	is_triggered_only = yes	
+	
+	option = { # Accept the Proposal
+		name = deviancy.11.a
+			
+		656 = { 
+			if = {
+				limit = { is_owned_by = ENG }
+				hidden_effect = {
+					remove_core_of = ENG
+					add_core_of = DDD
+				}
+				DDD = { transfer_state = 656 }
+			}
+		}
+		658 = { 
+			if = {		
+				limit = { is_owned_by = ENG }
+				hidden_effect = {
+					remove_core_of = ENG
+					add_core_of = DDD
+				}
+				DDD = { transfer_state = 658 }
+				}
+		}				
+		659 = { 
+			if = {		
+				limit = { is_owned_by = ENG }
+				hidden_effect = {
+					remove_core_of = ENG
+					add_core_of = DDD
+				}
+				DDD = { transfer_state = 659 }
+				}
+		}				
+
+		DDD = {
+			hidden_effect = {
+				country_event = { days = 1 id = deviancy.12 }
+			}
+		}				
+				
+	}
+	
+	option = { # Reject the Proposal
+		name = deviancy.11.b
+		
+		DDD = {
+			hidden_effect = {
+				country_event = { days = 1 id = deviancy.13 }
+			}
+			
+			effect_tooltip = {
+				DDD = {
+					create_wargoal = {
+						target = ENG
+						type = annex_everything
+					}
+				}
+			}
+		}	
+	}
+}	
+	
+country_event = { #England Accepts
+	id = deviancy.12
+	title = deviancy.12.t
+	desc = deviancy.12.d
+	picture = GFX_report_event_DDD_further_demands_reply_1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deviancy.12.a
+	}
+}
+
+country_event = { #England Rejects
+	id = deviancy.13
+	title = deviancy.13.t
+	desc = deviancy.13.d
+	picture = GFX_report_event_DDD_further_demands_reply_2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deviancy.13.a
+		
+		create_wargoal = {
+			target = ENG
+			type = annex_everything
+		}
+	}
+}	
+	
+
+# Test event
+country_event = {
+	id = deviancy.666
+	title = deviancy.666.t
+	desc = deviancy.666.d
+	picture = GFX_report_event_DDD_test_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = deviancy.666.a
+	}
+}

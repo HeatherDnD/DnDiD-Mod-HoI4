@@ -1,0 +1,237 @@
+spriteTypes = {	
+	
+	### DEVIANCY IDEAS
+	
+	spriteType = {
+		name = "GFX_idea_transcended_populace"
+		texturefile = "gfx/interface/ideas/idea_transcended_populace.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_deviant_missionaries"
+		texturefile = "gfx/interface/ideas/idea_deviant_missionaries.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_land_of_the_deviant"
+		texturefile = "gfx/interface/ideas/idea_land_of_the_deviant.dds"
+	}	
+
+	
+	### DEVIANCY FOCUS
+
+	spriteType = {
+		name = "GFX_goal_DDD_war_preparations"
+		texturefile = "gfx/interface/goals/goal_DDD_war_preparations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_DDD_western_preparations"
+		texturefile = "gfx/interface/goals/goal_DDD_western_preparations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_DDD_south_preparations"
+		texturefile = "gfx/interface/goals/goal_DDD_south_preparations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_DDD_east_preparations"
+		texturefile = "gfx/interface/goals/goal_DDD_east_preparations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_DDD_romanian_latex"
+		texturefile = "gfx/interface/goals/goal_DDD_romanian_latex.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_DDD_yugoslavian_question"
+		texturefile = "gfx/interface/goals/goal_DDD_yugoslavian_question.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_DDD_sinai_proposal"
+		texturefile = "gfx/interface/goals/goal_DDD_sinai_proposal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_DDD_claim_the_peninsula"
+		texturefile = "gfx/interface/goals/goal_DDD_claim_the_peninsula.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_goal_DDD_acquisition_of_iran"
+		texturefile = "gfx/interface/goals/goal_DDD_acquisition_of_iran.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_goal_DDD_acquisition_of_afghanistan"
+		texturefile = "gfx/interface/goals/goal_DDD_acquisition_of_afghanistan.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_goal_DDD_iranian_line"
+		texturefile = "gfx/interface/goals/goal_DDD_iranian_line.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_goal_DDD_afghan_line"
+		texturefile = "gfx/interface/goals/goal_DDD_afghan_line.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_goal_DDD_strike_the_ussr"
+		texturefile = "gfx/interface/goals/goal_DDD_strike_the_ussr.dds"
+	}
+	
+	
+	### DEVIANCY EVENTS
+
+	spriteType = {
+		name = "GFX_report_event_DDD_test_event"
+		texturefile = "gfx/event_picture/report_event_DDD_test_event.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_DDD_yugoslavian_question"
+		texturefile = "gfx/event_picture/report_event_DDD_yugoslavian_question.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_yugoslavian_question_ita"
+		texturefile = "gfx/event_picture/report_event_DDD_yugoslavian_question_ita.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_yugoslavian_question_reply_1"
+		texturefile = "gfx/event_picture/report_event_DDD_yugoslavian_question_reply_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_yugoslavian_question_reply_2"
+		texturefile = "gfx/event_picture/report_event_DDD_yugoslavian_question_reply_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_yugoslavian_question_reply_3"
+		texturefile = "gfx/event_picture/report_event_DDD_yugoslavian_question_reply_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_sinai_proposal"
+		texturefile = "gfx/event_picture/report_event_DDD_sinai_proposal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_sinai_proposal_eng"
+		texturefile = "gfx/event_picture/report_event_DDD_sinai_proposal_eng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_sinai_proposal_reply_1"
+		texturefile = "gfx/event_picture/report_event_DDD_sinai_proposal_reply_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_sinai_proposal_reply_2"
+		texturefile = "gfx/event_picture/report_event_DDD_sinai_proposal_reply_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_further_demands"
+		texturefile = "gfx/event_picture/report_event_DDD_further_demands.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_further_demands_eng"
+		texturefile = "gfx/event_picture/report_event_DDD_further_demands_eng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_further_demands_reply_1"
+		texturefile = "gfx/event_picture/report_event_DDD_further_demands_reply_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_DDD_further_demands_reply_2"
+		texturefile = "gfx/event_picture/report_event_DDD_further_demands_reply_2.dds"
+	}
+	
+	### DEVIANCY ADVISORS
+	
+#	spriteType = {
+#		name = "GFX_idea_DDD_unkown_1"
+#		texturefile = "gfx/interface/ideas/idea_DDD_unkown_1.dds"
+#	}	
+
+	spriteType = {
+		name = "GFX_idea_DDD_eunomia_yzmeya"
+		texturefile = "gfx/interface/ideas/idea_DDD_eunomia_yzmeya.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_DDD_ayemzy_aimonue"
+		texturefile = "gfx/interface/ideas/idea_DDD_ayemzy_aimonue.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_DDD_brunscythe"
+		texturefile = "gfx/interface/ideas/idea_DDD_brunscythe.dds"
+	}		
+
+#	spriteType = {
+#		name = "GFX_idea_DDD_unkown_2"
+#		texturefile = "gfx/interface/ideas/idea_DDD_unkown_2.dds"
+#	}	
+
+	spriteType = {
+		name = "GFX_idea_DDD_katyusha_dc"
+		texturefile = "gfx/interface/ideas/idea_DDD_katyusha_dc.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_DDD_sara_the_hive_mind"
+		texturefile = "gfx/interface/ideas/idea_DDD_sara_the_hive_mind.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_DDD_sergia_delgado"
+		texturefile = "gfx/interface/ideas/idea_DDD_sergia_delgado.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DDD_heather_wiltshire"
+		texturefile = "gfx/interface/ideas/idea_DDD_heather_wiltshire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_DDD_scylla_teras"
+		texturefile = "gfx/interface/ideas/idea_DDD_scylla_teras.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DDD_artio_aradusa"
+		texturefile = "gfx/interface/ideas/idea_DDD_artio_aradusa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DDD_cotten_elis"
+		texturefile = "gfx/interface/ideas/idea_DDD_cotten_elis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DDD_kaylessa"
+		texturefile = "gfx/interface/ideas/idea_DDD_kaylessa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DDD_jing_wei"
+		texturefile = "gfx/interface/ideas/idea_DDD_jing_wei.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_DDD_bastet_r_apophis"
+		texturefile = "gfx/interface/ideas/idea_DDD_bastet_r_apophis.dds"
+	}
+}

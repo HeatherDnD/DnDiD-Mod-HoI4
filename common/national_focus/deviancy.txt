@@ -1,0 +1,2519 @@
+focus_tree = {
+	id = deviancy_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DDD
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 800}
+
+	###		Army		###	
+	
+	focus = {
+		id = DDD_army_effort
+		icon = GFX_goal_DDD_army_effort
+		x = 5
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+			army_experience = 30
+		}
+	}	
+	
+	focus = {
+		id = DDD_doctrine_effort_I
+		icon = GFX_goal_DDD_doctrine_effort
+		prerequisite = { focus = DDD_army_effort }
+		mutually_exclusive = { focus = DDD_special_support_effort_I }
+		x = 0
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_special_support_effort_I
+		icon = GFX_goal_DDD_special_support_effort
+		prerequisite = { focus = DDD_army_effort }
+		mutually_exclusive = { focus = DDD_doctrine_effort_I }
+		x = 2
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3				
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_field_hospital
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_logistics_company
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3				
+				technology = tech_military_police
+				technology = tech_military_police2
+				technology = tech_military_police3
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_maintenance_company
+				technology = tech_maintenance_company2
+				technology = tech_maintenance_company3
+			}		
+		
+
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = paratroopers3				
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+			}
+		}
+	}		
+
+	focus = {
+		id = DDD_doctrine_effort_II
+		icon = GFX_goal_DDD_doctrine_effort
+		prerequisite = { focus = DDD_doctrine_effort_I focus = DDD_special_support_effort_I }
+		mutually_exclusive = { focus = DDD_special_support_effort_II }
+		x = 0
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_special_support_effort_II
+		icon = GFX_goal_DDD_special_support_effort
+		prerequisite = { focus = DDD_doctrine_effort_I focus = DDD_special_support_effort_I }
+		mutually_exclusive = { focus = DDD_doctrine_effort_II }
+		x = 2
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3				
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_field_hospital
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_logistics_company
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3				
+				technology = tech_military_police
+				technology = tech_military_police2
+				technology = tech_military_police3
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_maintenance_company
+				technology = tech_maintenance_company2
+				technology = tech_maintenance_company3
+			}		
+		
+
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = paratroopers3				
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_doctrine_effort_III
+		icon = GFX_goal_DDD_doctrine_effort
+		prerequisite = { focus = DDD_doctrine_effort_II focus = DDD_special_support_effort_II }
+		mutually_exclusive = { focus = DDD_special_support_effort_III }
+		x = 0
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_special_support_effort_III
+		icon = GFX_goal_DDD_special_support_effort
+		prerequisite = { focus = DDD_doctrine_effort_II focus = DDD_special_support_effort_II }
+		mutually_exclusive = { focus = DDD_doctrine_effort_III }
+		x = 2
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3				
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_field_hospital
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+				technology = tech_logistics_company
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3				
+				technology = tech_military_police
+				technology = tech_military_police2
+				technology = tech_military_police3
+				technology = tech_signal_company
+				technology = tech_signal_company2
+				technology = tech_signal_company3
+				technology = tech_maintenance_company
+				technology = tech_maintenance_company2
+				technology = tech_maintenance_company3
+			}		
+		
+
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = paratroopers3				
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_army_improvement_I
+		icon = GFX_goal_DDD_army_improvement
+		prerequisite = { focus = DDD_doctrine_effort_III focus = DDD_special_support_effort_III }
+		x = 1
+		y = 4
+		cost = 2
+		
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 30
+		}
+	}	
+	
+
+	focus = {
+		id = DDD_infantry_effort_I
+		icon = GFX_goal_DDD_infantry_effort
+		prerequisite = { focus = DDD_army_effort }
+		mutually_exclusive = { focus = DDD_artillery_effort_I }
+		x = 4
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_artillery_effort_I
+		icon = GFX_goal_DDD_artillery_effort
+		prerequisite = { focus = DDD_army_effort }
+		mutually_exclusive = { focus = DDD_infantry_effort_I }
+		x = 6
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}	
+	
+
+	focus = {
+		id = DDD_infantry_effort_II
+		icon = GFX_goal_DDD_infantry_effort
+		prerequisite = { focus = DDD_infantry_effort_I focus = DDD_artillery_effort_I }
+		mutually_exclusive = { focus = DDD_artillery_effort_II }
+		x = 4
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_artillery_effort_II
+		icon = GFX_goal_DDD_artillery_effort
+		prerequisite = { focus = DDD_infantry_effort_I focus = DDD_artillery_effort_I }
+		mutually_exclusive = { focus = DDD_infantry_effort_II }
+		x = 6
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}	
+	
+
+	focus = {
+		id = DDD_infantry_effort_III
+		icon = GFX_goal_DDD_infantry_effort
+		prerequisite = { focus = DDD_infantry_effort_II focus = DDD_artillery_effort_II }
+		mutually_exclusive = { focus = DDD_artillery_effort_III }
+		x = 4
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_artillery_effort_III
+		icon = GFX_goal_DDD_artillery_effort
+		prerequisite = { focus = DDD_infantry_effort_II focus = DDD_artillery_effort_II }
+		mutually_exclusive = { focus = DDD_infantry_effort_III }
+		x = 6
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_army_improvement_II
+		icon = GFX_goal_DDD_army_improvement
+		prerequisite = { focus = DDD_infantry_effort_III focus = DDD_artillery_effort_III }
+		x = 5
+		y = 4
+		cost = 2
+		
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 30
+		}
+	}	
+	
+
+	focus = {
+		id = DDD_mechanization_effort_I
+		icon = GFX_goal_DDD_mechanization_effort
+		prerequisite = { focus = DDD_army_effort }
+		mutually_exclusive = { focus = DDD_armor_effort_I }
+		x = 8
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_armor_effort_I
+		icon = GFX_goal_DDD_armor_effort
+		prerequisite = { focus = DDD_army_effort }
+		mutually_exclusive = { focus = DDD_mechanization_effort_I }
+		x = 10
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}	
+	
+
+	focus = {
+		id = DDD_mechanization_effort_II
+		icon = GFX_goal_DDD_mechanization_effort
+		prerequisite = { focus = DDD_mechanization_effort_I focus = DDD_armor_effort_I }
+		mutually_exclusive = { focus = DDD_armor_effort_II }
+		x = 8
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_armor_effort_II
+		icon = GFX_goal_DDD_armor_effort
+		prerequisite = { focus = DDD_mechanization_effort_I focus = DDD_armor_effort_I }
+		mutually_exclusive = { focus = DDD_mechanization_effort_II }
+		x = 10
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}	
+	
+
+	focus = {
+		id = DDD_mechanization_effort_III
+		icon = GFX_goal_DDD_mechanization_effort
+		prerequisite = { focus = DDD_mechanization_effort_II focus = DDD_armor_effort_II }
+		mutually_exclusive = { focus = DDD_armor_effort_III }
+		x = 8
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_armor_effort_III
+		icon = GFX_goal_DDD_armor_effort
+		prerequisite = { focus = DDD_mechanization_effort_II focus = DDD_armor_effort_II }
+		mutually_exclusive = { focus = DDD_mechanization_effort_III }
+		x = 10
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_army_improvement_III
+		icon = GFX_goal_DDD_army_improvement
+		prerequisite = { focus = DDD_mechanization_effort_III focus = DDD_armor_effort_III }
+		x = 9
+		y = 4
+		cost = 2
+		
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 30
+		}
+	}	
+	
+	focus = {
+		id = DDD_military_rnd
+		icon = GFX_goal_DDD_military_rnd
+		prerequisite = { focus = DDD_army_improvement_I }
+		prerequisite = { focus = DDD_army_improvement_II }
+		prerequisite = { focus = DDD_army_improvement_III }
+		x = 5
+		y = 5
+		cost = 10
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}		
+
+
+	###		AIR		###
+
+
+	focus = {
+		id = DDD_air_force_effort
+		icon = GFX_goal_DDD_air_force_effort
+		x = 15
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+			air_experience = 30
+		}
+	}	
+
+	focus = {
+		id = DDD_air_doctrin_I
+		icon = GFX_goal_DDD_air_doctrin
+		prerequisite = { focus = DDD_air_force_effort }
+		x = 12
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}	
+
+	focus = {
+		id = DDD_air_doctrin_II
+		icon = GFX_goal_DDD_air_doctrin
+		prerequisite = { focus = DDD_air_doctrin_I }
+		x = 12
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}	
+
+	focus = {
+		id = DDD_airbase_effort_I
+		icon = GFX_goal_DDD_airbase_effort
+		prerequisite = { focus = DDD_air_force_effort }
+		x = 14
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			if = {
+				limit = {
+					48 = { # Sofia
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					48 = { # Sofia
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+				}
+			}
+		}
+	}	
+
+	focus = {
+		id = DDD_airbase_effort_II
+		icon = GFX_goal_DDD_airbase_effort
+		prerequisite = { focus = DDD_airbase_effort_I }
+		x = 14
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			if = {
+				limit = {
+					231 = { # Georgia
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					231 = { # Georgia
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_light_fighter_effort
+		icon = GFX_goal_DDD_light_fighter_effort
+		prerequisite = { focus = DDD_air_force_effort }
+		mutually_exclusive = { focus = DDD_heavy_fighter_effort }
+		x = 16
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_close_air_support_effort
+		icon = GFX_goal_DDD_close_air_support_effort
+		prerequisite = { focus = DDD_light_fighter_effort }
+		x = 16
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 0.5
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_heavy_fighter_effort
+		icon = GFX_goal_DDD_heavy_fighter_effort
+		prerequisite = { focus = DDD_air_force_effort }
+		mutually_exclusive = { focus = DDD_light_fighter_effort }
+		x = 18
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_tactical_bomber_effort
+		icon = GFX_goal_DDD_tactical_bomber_effort
+		prerequisite = { focus = DDD_heavy_fighter_effort }
+		x = 18
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_strategic_bomber_effort
+		icon = GFX_goal_DDD_tactical_bomber_effort
+		prerequisite = { focus = DDD_close_air_support_effort focus = DDD_tactical_bomber_effort }
+		x = 17
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 1
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+			}
+		}
+	}
+
+	###		Navy		###	
+	
+	focus = {
+		id = DDD_naval_effort
+		icon = GFX_goal_DDD_air_force_effort
+		x = 23
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+			navy_experience = 30
+		}
+	}	
+	
+	focus = {
+		id = DDD_cruiser_effort
+		icon = GFX_goal_DDD_cruiser_effort
+		prerequisite = { focus = DDD_naval_effort }
+		mutually_exclusive = { focus = DDD_destroyer_effort }
+		x = 20
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 0.5
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 0.5
+				uses = 1
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_battleship_effort
+		icon = GFX_goal_DDD_battleship_effort
+		prerequisite = { focus = DDD_cruiser_effort }
+		x = 20
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 0.5
+				uses = 2
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_destroyer_effort
+		icon = GFX_goal_DDD_destroyer_effort
+		prerequisite = { focus = DDD_naval_effort }
+		mutually_exclusive = { focus = DDD_cruiser_effort }
+		x = 22
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_submarine_effort
+		icon = GFX_goal_DDD_submarine_effort
+		prerequisite = { focus = DDD_destroyer_effort }
+		x = 22
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_carrier_effort
+		icon = GFX_goal_DDD_tactical_bomber_effort
+		prerequisite = { focus = DDD_battleship_effort focus = DDD_submarine_effort }
+		x = 21
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cc_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}	
+
+	focus = {
+		id = DDD_dockyard_effort_I
+		icon = GFX_goal_DDD_dockyard_effort
+		prerequisite = { focus = DDD_naval_effort }
+		x = 24
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			340 = { # Bursa
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}	
+
+	focus = {
+		id = DDD_dockyard_effort_II
+		icon = GFX_goal_DDD_dockyard_effort
+		prerequisite = { focus = DDD_dockyard_effort_I }
+		x = 24
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			339 = { # Izmir
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}	
+
+	focus = {
+		id = DDD_naval_doctrin_I
+		icon = GFX_goal_DDD_naval_doctrin
+		prerequisite = { focus = DDD_naval_effort }
+		x = 26
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}	
+
+	focus = {
+		id = DDD_naval_doctrin_II
+		icon = GFX_goal_DDD_naval_doctrin
+		prerequisite = { focus = DDD_naval_doctrin_I }
+		x = 26
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	
+	###		AIR & NAVAL CROSSOVER		###
+
+	focus = {
+		id = DDD_naval_bomber_effort
+		icon = GFX_goal_DDD_naval_bomber_effort
+		prerequisite = { focus = DDD_carrier_effort }
+		prerequisite = { focus = DDD_strategic_bomber_effort }
+		x = 19
+		y = 4
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_air_effort
+				bonus = 0.5
+				uses = 1
+				technology = naval_bomber1
+				technology = naval_bomber2
+				technology = naval_bomber3
+			}
+		}
+	}
+
+	###		Industri		###
+	
+	focus = {
+		id = DDD_industrial_growth
+		icon = GFX_goal_DDD_industrial_growth
+		x = 32
+		y = 0
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_central_infrastructure
+		icon = GFX_goal_DDD_central_infrastructure
+		prerequisite = { focus = DDD_industrial_growth }		
+		x = 28
+		y = 1
+		cost = 10
+		
+		bypass = {
+			OR = {
+				49 = { # Ankara		
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				347 = {	# Izmit		
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			49 = { # Ankara
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+			347 = { # Izmit
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}	
+	}
+	
+	focus = {
+		id = DDD_western_infrastructure
+		icon = GFX_goal_DDD_central_infrastructure
+		prerequisite = { focus = DDD_central_infrastructure }		
+		x = 28
+		y = 2
+		cost = 10
+		
+		bypass = {
+			OR = {
+								184 = {	# Thrace			
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				731 = { # Central Macedonia
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			184 = { # Thrace
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+			731 = { # Central Macedonia
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}	
+	}	
+	
+	focus = {
+		id = DDD_eastern_infrastructure
+		icon = GFX_goal_DDD_eastern_infrastructure
+		prerequisite = { focus = DDD_western_infrastructure }		
+		x = 28
+		y = 3
+		cost = 10
+		
+		bypass = {
+			OR = {
+				231 = {	# Georgia		
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				229 = { # Azerbaijan
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			231 = {	# Georgia	
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+			229 = { # Azerbaijan
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}	
+	}
+	
+	focus = {
+		id = DDD_central_civilian_industry
+		icon = GFX_goal_DDD_central_civilian_industry
+		prerequisite = { focus = DDD_industrial_growth }		
+		x = 30
+		y = 1
+		cost = 10
+		
+		bypass = {
+			NOT = {
+				49 = { # Ankara
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			49 = { # Ankara
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+		}	
+	}
+	
+	focus = {
+		id = DDD_western_civilian_industry
+		icon = GFX_goal_DDD_western_civilian_industry
+		prerequisite = { focus = DDD_central_civilian_industry }		
+		x = 30
+		y = 2
+		cost = 10
+		
+		bypass = {
+			NOT = {
+				184 = {	# Thrace	
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			184 = {	# Thrace	
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+		}	
+	}
+	
+	focus = {
+		id = DDD_eastern_civilian_industry
+		icon = GFX_goal_DDD_eastern_civilian_industry
+		prerequisite = { focus = DDD_western_civilian_industry }		
+		x = 30
+		y = 3
+		cost = 10
+		
+		bypass = {
+			NOT = {
+				230 = {	# Armenia	
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			230 = {	# Armenia		
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+		}	
+	}
+	
+	focus = {
+		id = DDD_central_militart_industry
+		icon = GFX_goal_DDD_central_militart_industry
+		prerequisite = { focus = DDD_industrial_growth }		
+		x = 32
+		y = 1
+		cost = 10
+		
+		bypass = {
+			NOT = {
+				347 = { # Izmit
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			347 = { # Izmit
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+		}	
+	}
+	
+	focus = {
+		id = DDD_western_militart_industry
+		icon = GFX_goal_DDD_western_militart_industry
+		prerequisite = { focus = DDD_central_militart_industry }		
+		x = 32
+		y = 2
+		cost = 10
+		
+		bypass = {
+			NOT = {
+				212 = {	# Plovdiv	
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			212 = {	# Plovdiv	
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+		}	
+	}
+	
+	focus = {
+		id = DDD_eastern_militart_industry
+		icon = GFX_goal_DDD_eastern_militart_industry
+		prerequisite = { focus = DDD_western_militart_industry }		
+		x = 32
+		y = 3
+		cost = 10
+		
+		bypass = {
+			NOT = {
+				354 = {	# Trabzon	
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			354 = {	# Trabzon		
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}		
+		}	
+	}
+	
+	focus = {
+		id = DDD_deviant_monuments
+		icon = GFX_goal_DDD_deviant_monuments
+		prerequisite = { focus = DDD_eastern_infrastructure }	
+		prerequisite = { focus = DDD_eastern_civilian_industry }			
+		prerequisite = { focus = DDD_eastern_militart_industry }		
+		x = 30
+		y = 4
+		cost = 5
+
+		completion_reward = {
+			add_ideas = deviant_monuments		
+		}	
+	}
+	
+	focus = {
+		id = DDD_military_grade_toasters
+		icon = GFX_goal_DDD_military_grade_toasters
+		prerequisite = { focus = DDD_industrial_growth }		
+		x = 34
+		y = 1
+		cost = 5
+		
+		available = {
+			threat > 0.25
+		}
+		
+		completion_reward = {
+			add_ideas = military_toast		
+		}	
+	}
+	
+	focus = {
+		id = DDD_electronic_industry
+		icon = GFX_goal_DDD_electronic_industry
+		prerequisite = { focus = DDD_industrial_growth }		
+		x = 36
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = name_DDD_electronic_industry
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_science
+		icon = GFX_goal_DDD_deviant_science
+		prerequisite = { focus = DDD_electronic_industry }		
+		x = 36
+		y = 2
+		cost = 10
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_magic
+		icon = GFX_goal_DDD_deviant_magic
+		prerequisite = { focus = DDD_deviant_science }		
+		x = 34
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = name_DDD_deviant_magic
+				bonus = 0.5
+				uses = 1
+				category = rocketry
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_power
+		icon = GFX_goal_DDD_deviant_power
+		prerequisite = { focus = DDD_deviant_science }		
+		x = 36
+		y = 3
+		cost = 10
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = name_DDD_deviant_power
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	
+
+	###		POLITICS		###
+	
+	focus = {
+		id = DDD_deviant_politics
+		icon = GFX_goal_DDD_deviant_politics
+		x = 42
+		y = 0
+		cost = 10
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = DDD_red_deity
+		icon = GFX_goal_DDD_red_deity
+		prerequisite = { focus = DDD_deviant_politics }		
+		mutually_exclusive = { focus = DDD_deviant_first }
+		mutually_exclusive = { focus = DDD_deviant_liberties }
+		x = 39
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}	
+			
+			add_ideas = red_deity_idea
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_for_all
+		icon = GFX_goal_DDD_deviant_for_all
+		prerequisite = { focus = DDD_red_deity }		
+		mutually_exclusive = { focus = DDD_deviant_for_one }
+		x = 38
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			add_ideas = deviant_for_all
+		}
+	}
+	
+	focus = {
+		id = DDD_damsels_for_the_cause
+		icon = GFX_goal_DDD_damsels_for_the_cause
+		prerequisite = { focus = DDD_deviant_for_all }		
+		x = 38
+		y = 3
+		cost = 10
+
+		completion_reward = {
+			add_ideas = damsels_for_the_cause
+		}
+	}
+	
+	focus = {
+		id = DDD_tools_for_the_job
+		icon = GFX_goal_DDD_damsels_for_the_cause
+		prerequisite = { focus = DDD_damsels_for_the_cause }		
+		x = 38
+		y = 4
+		cost = 10
+
+		completion_reward = {
+			add_ideas = tools_for_the_job
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_for_one
+		icon = GFX_goal_DDD_deviant_for_one
+		prerequisite = { focus = DDD_red_deity }		
+		mutually_exclusive = { focus = DDD_deviant_for_all }
+		x = 40
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			add_ideas = deviant_for_one
+		}
+	}
+	
+	focus = {
+		id = DDD_improve_ourselves
+		icon = GFX_goal_DDD_improve_ourselves
+		prerequisite = { focus = DDD_deviant_for_one }		
+		x = 40
+		y = 3
+		cost = 10
+
+		completion_reward = {
+			add_ideas = improve_ourselves
+		}
+	}
+	
+	focus = {
+		id = DDD_improve_eachother
+		icon = GFX_goal_DDD_improve_eachother
+		prerequisite = { focus = DDD_improve_ourselves }		
+		x = 40
+		y = 4
+		cost = 10
+
+		completion_reward = {
+			add_ideas = improve_eachother
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_first
+		icon = GFX_goal_DDD_deviant_first
+		prerequisite = { focus = DDD_deviant_politics }		
+		mutually_exclusive = { focus = DDD_red_deity }
+		mutually_exclusive = { focus = DDD_deviant_liberties }
+		x = 42
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}	
+			
+			add_ideas = deviant_first
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_teachings
+		icon = GFX_goal_DDD_deviant_teachings
+		prerequisite = { focus = DDD_deviant_first }		
+		x = 42
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			add_ideas = deviant_teachings
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_loves_all
+		icon = GFX_goal_DDD_deviant_loves_all
+		prerequisite = { focus = DDD_deviant_teachings }		
+		x = 42
+		y = 3
+		cost = 10
+
+		completion_reward = {
+			add_ideas = deviant_loves_all
+		}
+	}
+	
+	focus = {
+		id = DDD_oracle_of_the_deviant
+		icon = GFX_goal_DDD_oracle_of_the_deviant
+		prerequisite = { focus = DDD_deviant_loves_all }		
+		x = 42
+		y = 4
+		cost = 10
+
+		completion_reward = {
+			custom_effect_tooltip = DDD_oracle_of_the_deviant_tt
+			hidden_effect = {
+				add_tech_bonus = {
+					name = everything_bonus
+					ahead_reduction = 1
+					uses = 3
+					category = light_air
+					category = medium_air
+					category = heavy_air
+					category = armor
+					category = cat_light_armor
+					category = cat_medium_armor
+					category = cat_heavy_armor
+					category = artillery
+					category = cat_anti_tank
+					category = naval_air
+					category = infantry_weapons
+					category = motorized_equipment
+					category = cat_mechanized_equipment
+					category = naval_equipment
+					category = rocketry
+					category = nuclear
+					category = industry
+					category = electronics
+					category = land_doctrine
+					category = air_doctrine
+					category = naval_doctrine
+					category = strategic_destruction_tree
+					category = battlefield_support_tree
+					category = operational_integrity_tree
+					category = jet_technology
+					category = trade_interdiction_tree
+					category = convoy_defense_tree
+					category = light_fighter
+					category = cat_heavy_fighter
+					category = tactical_bomber
+					category = cat_strategic_bomber
+					category = naval_bomber
+					category = cas_bomber
+					category = dd_tech
+					category = cl_tech
+					category = ca_tech
+					category = cv_tech
+					category = bc_tech
+					category = bb_tech
+					category = shbb_tech
+					category = ss_tech
+					category = tp_tech
+					category = synth_resources
+					category = fleet_in_being_tree
+					category = encryption_tech
+					category = decryption_tech
+					category = computing_tech
+					category = radar_tech
+					category = infantry_tech
+					category = marine_tech
+					category = construction_tech
+					category = submarine_doctrine
+					category = air_equipment
+					category = cat_mobile_warfare
+					category = cat_superior_firepower
+					category = cat_grand_battle_plan
+					category = cat_mass_assault
+					category = cat_base_strike
+					category = cat_trade_interdiction
+					category = cat_fleet_in_being
+					category = cat_strategic_destruction
+					category = cat_battlefield_support
+					category = cat_operational_integrity
+					category = night_vision
+					category = base_strike_main
+					category = mot_rockets
+					category = support_tech
+					category = para_tech
+					category = engineers_tech
+					category = recon_tech
+					category = mountaineers_tech
+					category = military_police_tech
+					category = hospital_tech
+					category = logistics_tech
+					category = signal_company_tech
+					category = maintenance_company_tech
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_deviant_liberties
+		icon = GFX_goal_DDD_deviant_liberties
+		prerequisite = { focus = DDD_deviant_politics }		
+		mutually_exclusive = { focus = DDD_deviant_first }
+		mutually_exclusive = { focus = DDD_red_deity }
+		x = 45
+		y = 1
+		cost = 5
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}	
+			
+			add_ideas = deviant_liberties
+		}
+	}
+	
+	focus = {
+		id = DDD_fight_for_all
+		icon = GFX_goal_DDD_fight_for_all
+		prerequisite = { focus = DDD_deviant_liberties }		
+		mutually_exclusive = { focus = DDD_defence_of_the_chosen }
+		x = 44
+		y = 2
+		cost = 10
+
+		completion_reward = {	
+			add_ideas = fight_for_all
+		}
+	}
+	
+	focus = {
+		id = DDD_trade_systems
+		icon = GFX_goal_DDD_trade_systems
+		prerequisite = { focus = DDD_fight_for_all }		
+		x = 44
+		y = 3
+		cost = 10
+
+		completion_reward = {	
+			add_ideas = trade_systems
+		}
+	}
+	
+	focus = {
+		id = DDD_party_and_politics
+		icon = GFX_goal_DDD_party_and_politics
+		prerequisite = { focus = DDD_trade_systems }		
+		x = 44
+		y = 4
+		cost = 10
+
+		completion_reward = {	
+			add_political_power = 150
+			add_ideas = party_and_politics
+		}
+	}
+	
+	focus = {
+		id = DDD_defence_of_the_chosen
+		icon = GFX_goal_DDD_defence_of_the_chosen
+		prerequisite = { focus = DDD_deviant_liberties }		
+		mutually_exclusive = { focus = DDD_fight_for_all }
+		x = 46
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			add_political_power = 150			
+			add_ideas = neutrality_idea
+		}
+	}
+	
+	focus = {
+		id = DDD_further_transcended
+		icon = GFX_goal_DDD_further_transcended
+		prerequisite = { focus = DDD_defence_of_the_chosen }		
+		x = 46
+		y = 3
+		cost = 10
+
+		completion_reward = {			
+			add_ideas = further_transcended
+		}
+	}
+	
+	focus = {
+		id = DDD_deterrence
+		icon = GFX_goal_DDD_deterrence
+		prerequisite = { focus = DDD_further_transcended }		
+		x = 46
+		y = 4
+		cost = 10
+
+		completion_reward = {			
+			add_ideas = deterrence_measures
+		}
+	}
+	
+	
+	###		WAR		###
+	
+	focus = {
+		id = DDD_war_preparations
+		icon = GFX_goal_DDD_war_preparations
+		x = 53
+		y = 0
+		cost = 5
+		
+		available = {
+			has_army_manpower = { size > 599999 }
+		}
+		
+		cancel_if_invalid = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = DDD_western_preparations
+		icon = GFX_goal_DDD_western_preparations
+		prerequisite = { focus = DDD_war_preparations }
+		x = 49
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			211 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9783
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 649
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9612
+							instant_build = yes
+						}		
+					}
+				}
+			}	
+			212 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9610
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3796
+							instant_build = yes
+						}
+
+					}
+				}
+			}		
+			48 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 793
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11754
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9771
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 965
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 935
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6857
+							instant_build = yes
+						}
+					}
+				}
+			}
+			731 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3526
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 936
+							instant_build = yes
+						}
+					}
+				}
+			}
+			185 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9837
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 841
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3914
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9805
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_south_preparations
+		icon = GFX_goal_DDD_south_preparations
+		prerequisite = { focus = DDD_war_preparations }
+
+		will_lead_to_war_with = IRQ
+		available = {
+			IRQ = { 
+				exists = yes
+			}
+			NOT = { is_in_faction_with = IRQ }
+		}
+		x = 53
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = {
+				target = IRQ
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_east_preparations
+		icon = GFX_goal_DDD_east_preparations
+		prerequisite = { focus = DDD_war_preparations }
+
+		x = 57
+		y = 1
+		cost = 10
+		
+		completion_reward = {
+			233 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3698
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6721
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9674
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6692
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9649
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 685
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9647
+							instant_build = yes
+						}
+					}
+				}
+			}	
+			232 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3672
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3682
+							instant_build = yes
+						}
+
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6701
+							instant_build = yes
+						}						
+					}
+				}
+			}	
+		}			
+	}
+	
+			
+	focus = {
+		id = DDD_romanian_latex
+		icon = GFX_goal_DDD_romanian_latex
+		prerequisite = { focus = DDD_western_preparations }
+
+		will_lead_to_war_with = ROM
+		available = {
+			ROM = { 
+				exists = yes
+			}
+			NOT = { is_in_faction_with = ROM }
+		}
+		x = 48
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+	}	
+	
+	focus = {
+		id = DDD_yugoslavian_question
+		icon = GFX_goal_DDD_yugoslavian_question
+		prerequisite = { focus = DDD_western_preparations }
+
+		will_lead_to_war_with = YUG
+		available = {
+			YUG = { 
+				exists = yes
+			}
+			is_in_faction = yes
+			NOT = { is_in_faction_with = YUG }
+		}
+		x = 50
+		y = 2
+		cost = 10
+
+		
+		completion_reward = {
+			country_event = { days = 1 id = deviancy.1 }
+		}
+	}	
+	
+	focus = {
+		id = DDD_sinai_proposal
+		icon = GFX_goal_DDD_sinai_proposal
+		prerequisite = { focus = DDD_south_preparations }
+
+		will_lead_to_war_with = ENG
+		available = {
+			ENG = { exists = yes }
+			NOT = { is_in_faction_with = ENG }
+			183 = { is_owned_by = DDD }
+			OR {
+				453 = { is_owned_by = ENG }
+				454 = { is_owned_by = ENG }
+				455 = { is_owned_by = ENG }
+			}	
+		}
+		x = 52
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			country_event = { days = 1 id = deviancy.6 }
+		}
+	}	
+	
+	focus = {
+		id = DDD_claim_the_peninsula
+		icon = GFX_goal_DDD_claim_the_peninsula
+		prerequisite = { focus = DDD_south_preparations }
+
+		will_lead_to_war_with = SAU
+		will_lead_to_war_with = YEM	
+		will_lead_to_war_with = OMA		
+		
+		available = {
+			OR = {
+				SAU = { 
+					exists = yes
+				}
+				YEM = { 
+					exists = yes
+				}
+				OMA = { 
+					exists = yes
+				}				
+			}
+			NOT = { is_in_faction_with = SAU }
+			NOT = { is_in_faction_with = YEM }
+			NOT = { is_in_faction_with = OMA }
+		}
+		x = 54
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = {
+				target = SAU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = YEM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = OMA
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_further_demands
+		icon = GFX_goal_DDD_further_demands
+		prerequisite = { focus = DDD_sinai_proposal }
+		prerequisite = { focus = DDD_claim_the_peninsula }
+
+		will_lead_to_war_with = ENG
+		available = {
+			ENG = { exists = yes }
+			NOT = { is_in_faction_with = ENG }
+			OR = {
+				656 = { is_owned_by = ENG }
+				658 = { is_owned_by = ENG }
+				659 = { is_owned_by = ENG }
+			}	
+		}
+		x = 53
+		y = 3
+		cost = 10
+
+		
+		completion_reward = {
+			country_event = { days = 1 id = deviancy.10 }
+		}
+	}	
+	
+	focus = {
+		id = DDD_acquisition_of_iran
+		icon = GFX_goal_DDD_acquisition_of_iran
+		prerequisite = { focus = DDD_east_preparations }
+
+		will_lead_to_war_with = PER
+		available = {
+			PER = { exists = yes }
+			NOT = { is_in_faction_with = PER }	
+		}
+		x = 57
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_acquisition_of_afghanistan
+		icon = GFX_goal_DDD_acquisition_of_afghanistan
+		prerequisite = { focus = DDD_acquisition_of_iran }
+
+		will_lead_to_war_with = AFG
+		available = {
+			AFG = { exists = yes }
+			NOT = { is_in_faction_with = AFG }	
+		}
+		x = 56
+		y = 3
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = {
+				target = AFG
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_iranian_line
+		icon = GFX_goal_DDD_iranian_line
+		prerequisite = { focus = DDD_acquisition_of_iran }
+
+		will_lead_to_war_with = AFG
+		available = {
+			OR = {
+				266 = { is_owned_by = DDD }
+				416 = { is_owned_by = DDD }
+			}
+		}
+		x = 58
+		y = 4
+		cost = 5
+
+		completion_reward = {
+			266 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7602
+							instant_build = yes
+						}
+					}
+				}
+			}
+			416 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10351
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 1521
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 5029
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 2000
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_afghan_line
+		icon = GFX_goal_DDD_afghan_line
+		prerequisite = { focus = DDD_acquisition_of_afghanistan }
+
+		will_lead_to_war_with = AFG
+		available = {
+			OR = {
+				415 = { is_owned_by = DDD }
+				267 = { is_owned_by = DDD }
+			}
+		}
+		x = 56
+		y = 4
+		cost = 5
+
+		completion_reward = {
+			415 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4893
+							instant_build = yes
+						}
+					}
+				}
+			}
+			267 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10476
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7448
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7584
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12248
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12314
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12653
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7519
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DDD_strike_the_ussr
+		icon = GFX_goal_DDD_strike_the_ussr
+		prerequisite = { focus = DDD_iranian_line }
+		prerequisite = { focus = DDD_afghan_line }
+		
+		will_lead_to_war_with = SOV
+		available = {
+			SOV = { exists = yes }
+			NOT = { is_in_faction_with = SOV }	
+		}
+		x = 57
+		y = 5
+		cost = 10
+
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=352
+	name="STATE_352" # Van
+	manpower = 365490
+	resources={
+		steel = 30
+	}
+
+	state_category = rural
+
+	history={
+		owner = DDD
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = DDD
+	}
+
+	provinces={
+		864 1463 6935 7530 10497 12318 12476 
+	}
+}

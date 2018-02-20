@@ -1,0 +1,85 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = italy_DDD
+
+
+#Yugoslavian Question from Deviancy
+
+country event = {
+	id = italy_DDD.1
+	title = italy_DDD.1.t
+	desc = italy_DDD.1.d
+	picture = GFX_report_event_ITA_yugoslavian_question
+
+	is_triggered_only = yes
+	
+	option = { # Agree to the plan
+		name = italy_DDD.1.a
+		
+		if = {
+			limit = {
+				limit = { is_in_faction = no }
+			}
+			DDD = {	add_to_faction = ITA }
+		}
+		
+		DDD = {
+			country_event = { days = 1 id = deviancy.focus.war.1.1 }
+			effect_tooltip = {
+				DDD = {
+					create_wargoal = {
+						target = YUG
+						type = annex_everything
+					}
+					add_to_faction = ITA
+				}
+			}
+		}
+	}
+	
+	option = { # No intrest
+		name = italy_DDD.1.b
+		
+		DDD = {
+			country_event = { days = 1 id = deviancy.focus.war.1.2 }
+			effect_tooltip = {
+				DDD = {
+					create_wargoal = {
+						target = YUG
+						type = annex_everything
+					}
+				}
+			}
+		}		
+	}
+	
+	option = { # Yugoslavia is our rightfull land!
+		name = italy_DDD.1.c
+
+		if = {
+			limit = {
+				limit = { 
+					NOT = { is_in_faction_with = DDD } 
+				}
+				DDD = {
+					country_event = { days = 1 id = deviancy.focus.war.1.3 }
+				}	
+				create_wargoal = {
+					target = DDD
+					type = annex_everything
+				}
+				effect_tooltip = {
+					create_wargoal = {
+						target = DDD
+						type = annex_everything
+					}
+				}
+					
+			}
+			
+		}		
+		
+	}
+}

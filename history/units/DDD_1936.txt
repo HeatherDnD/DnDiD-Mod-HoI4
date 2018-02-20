@@ -1,0 +1,544 @@
+﻿Division_template = {
+    Name = "Maid Division"            # A stock infantry division
+    regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+Division_template = {
+    Name = "Mountain Maids"            # A mountaineer Brigade
+    regiments = {
+		mountaineers = { x = 0 y = 0 }
+        mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+        artillery_brigade = { x = 2 y = 0 }
+        artillery_brigade = { x = 2 y = 1 }
+    }
+    support = {
+        recon = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "Pony Company"               #  A Cavalry Brigade
+
+    regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+    }
+    support = {
+        recon = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "Motorized Maids"                   # A motorized division
+
+    regiments = {
+		motorized = { x = 0 y = 0 }
+        motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+    }
+}
+
+division_template = {
+    name = "Tank Division"                        # A Tank Battalion
+
+    regiments = {
+        light_armor = { x = 0 y = 0 }        
+        light_armor = { x = 0 y = 1 }        
+        light_armor = { x = 1 y = 0 }
+        light_armor = { x = 1 y = 1 }
+        motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+    }
+    support = {
+           recon = { x = 0 y = 0 }
+           artillery = { x = 0 y = 0 }
+    }
+	priority = 2
+}
+
+
+units = {
+	######## LAND UNITS ########
+	##### Deviancy Armies #####
+	division = {
+		name = "1. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "2. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "3. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "4. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "5. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "6. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "7. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "8. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "9. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "10. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "11. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "12. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "13. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "14. Maids"
+		location = 9833 # Istanbul
+		division_template = "Maid Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "15. Mountain Maids"
+		location = 9833 # Istanbul
+		division_template = "Mountain Maids" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "16. Mountain Maids"
+		location = 9833 # Istanbul
+		division_template = "Mountain Maids" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "17. Mountain Maids"
+		location = 9833 # Istanbul
+		division_template = "Mountain Maids" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "18. Mountain Maids"
+		location = 9833 # Istanbul
+		division_template = "Mountain Maids" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "19. Mountain Maids"
+		location = 9833 # Istanbul
+		division_template = "Mountain Maids" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "20. Pony Company"
+		location = 9833 # Istanbul
+		division_template = "Pony Company" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		name = "21. Pony Company"
+		location = 9833 # Istanbul
+		division_template = "Pony Company" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		name = "22. Pony Company"
+		location = 9833 # Istanbul
+		division_template = "Pony Company" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		name = "23. Pony Company"
+		location = 9833 # Istanbul
+		division_template = "Pony Company" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		name = "24. Pony Company"
+		location = 9833 # Istanbul
+		division_template = "Pony Company" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		name = "25. Pony Company"
+		location = 9833 # Istanbul
+		division_template = "Pony Company" 
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.4
+
+	}
+	
+	division = {
+		name = "26. Motorized Maids"
+		location = 9833 # Istanbul
+		division_template = "Motorized Maids" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "27. Motorized Maids"
+		location = 9833 # Istanbul
+		division_template = "Motorized Maids" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "28. Tank Division"
+		location = 9833 # Istanbul
+		division_template = "Tank Division" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "29. Tank Division"
+		location = 9833 # Istanbul
+		division_template = "Tank Division" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		name = "30. Tank Division"
+		location = 9833 # Istanbul
+		division_template = "Tank Division" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+
+	}
+
+	
+	##### NAVAL UNITS #####
+	### Deviancy Fleets ###
+	### GDV = Grand Deviancy Vessal
+	
+	### ROYAL DEVIANT HOME FLEET ###			
+	navy = {				
+		name = "Royal Deviant Home Fleet"
+		base = 10007
+		location = 10007 # Rhodes
+		ship = { name = "GDV HardStyle" definition = carrier equipment = { carrier_1  = { amount = 1 owner = DDD} }
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "ENG" amount = 20 } 
+				cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 25 }
+			}
+		}
+		ship = { name = "GDV Wolf" definition = battleship equipment = { battleship_1  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Will" definition = heavy_cruiser equipment = { heavy_cruiser_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Heather" definition = heavy_cruiser equipment = { heavy_cruiser_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Cotten" definition = light_cruiser equipment = { light_cruiser_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Nash" definition = light_cruiser equipment = { light_cruiser_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Robin" definition = light_cruiser equipment = { light_cruiser_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Willow" definition = light_cruiser equipment = { light_cruiser_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Pumkpin" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Cutie Pants" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Little Miss" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Kitten" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Angel" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Ducky" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Lambkin" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Peach" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Giggles" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+	}     
+		  
+	### BLACK SEA FLEET ###	
+	navy = {				
+		name = "Black Sea Fleet"
+		base = 9783
+		location = 9783 # Varna
+	ship = { name = "GDV Divinity" definition = battleship equipment = { battleship_1  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Scylla" definition = battle_cruiser equipment = { battle_cruiser_1  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Katyusha" definition = light_cruiser equipment = { light_cruiser_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Bastet" definition = light_cruiser equipment = { light_cruiser_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Artio" definition = light_cruiser equipment = { light_cruiser_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Doll" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Doodlebug" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Cuteness" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Daisy" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Sparkles" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+	ship = { name = "GDV Sweetie" definition = destroyer equipment = { destroyer_2  = { amount = 1 owner = DDD} } }
+	} 
+
+	### DEVIANT FLOTILLA ###	
+	navy = {
+		name = "Deviant Flotilla"
+		base = 10007
+		location = 10007 # Rhodes
+		ship = { name = "GDV Leave it to Beaver" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Thats 70's show" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Seinfeld" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Everybody Hates Chris" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV The George Lopez Show" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Happy Days" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV It's Always Sunny" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Scrubs" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV The Fresh Prince" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV The Jeffersons" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Fraiser" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+		ship = { name = "GDV Hidamari Sketch" definition = submarine equipment = { submarine_2  = { amount = 1 owner = DDD} } }
+	}
+}
+
+### Air Wings ###
+##### Deviancy airforce #####
+#They have none!
+air_wings = { }
+
+
+
+### Starting Production ###
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "DDD"
+		}
+		requested_factories = 8
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "DDD" 
+		}
+		requested_factories = 8
+		progress = 0.5
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "DDD" 
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+			equipment = {
+				type = motorized_equipment_1
+				creator = "DDD" 
+			}
+			requested_factories = 2
+			progress = 0.1
+			efficiency = 50
+	}	
+	
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "DDD" 
+		}
+		requested_factories = 2
+		progress = 0.8
+		efficiency = 50
+	}	
+	
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "DDD" 
+		}
+		requested_factories = 4
+		progress = 0.8
+		efficiency = 50
+	}	
+	
+	add_equipment_production = {
+		equipment = {
+			type = nav_bomber_equipment_1
+			creator = "DDD" 
+		}
+		requested_factories = 2
+		progress = 0.8
+		efficiency = 50
+	}	
+	
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_0
+			creator = "DDD" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 50
+	}	
+	
+	add_equipment_production = {
+		equipment = {
+			type = cv_nav_bomber_equipment_1
+			creator = "DDD" 
+		}
+		requested_factories = 1
+		progress = 0.8
+		efficiency = 50
+	}
+
+	### Ongoing Ship Production ###
+		
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "GER"
+			version_name = "Deviant's Will"
+		}
+		requested_factories = 15
+		progress = 0.10
+		amount = 1
+	}
+}
